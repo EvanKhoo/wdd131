@@ -12,6 +12,18 @@ area = radius * radius * PI;
 
 console.log(area);
 
+//Multiplication operator
+let result = ONE * TWO;
+console.log(result);
+
+//Concat operator
+result = ONE + TWO;
+console.log(result);
+
+//Addition operator
+result = ONE + Number(TWO);
+console.log(result);
+
 let course = "CSE131"; //global scope
 if (true) {
     let student = "John";
