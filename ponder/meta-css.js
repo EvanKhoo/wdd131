@@ -28,17 +28,30 @@ console.log(result);
 //if (true) {
     //let student = "John";
    // console.log(course);  //works just fine, course is global
- //   console.log(student); //works just fine, it's being accessed within the block
+   
+   //works just fine, it's being accessed within the block
+ //   console.log(student); 
 //}
 //console.log(course); //works fine, course is global
-//console.log(student); //does not work, can't access a block variable outside the block
+
+ //does not work, can't access a block variable outside the block
+//console.log(student);
                     
 
 
 let selectElem = document.getElementById('webdevlist');
 selectElem.addEventListener('change', function(){
+    document.querySelector('#html').style.color = 'black';
+    document.querySelector('#css').style.color = 'black';
+    document.querySelector('#js').style.color = 'black';
     let codeValue = selectElem.value;
     console.log(codeValue);
     document.getElementById(codeValue).style.color = 'red';
 })
                 
+const image = document.querySelector('img');
+image.setAttribute('src', 'img/html-css-js.jpg');
+image.setAttribute('alt', 'new logo with black background');
+
+document.body.className = 'blue';
+// document.body.style.backgroundColor = 'lightblue';
