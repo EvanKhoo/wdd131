@@ -2,8 +2,14 @@ body{
     background-color: white;
     font-size: 15px;
 }
+#complete-content{
+    border: 1px solid black;
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 70px;
+}
 #head{
-    margin: 0, auto;
+    margin: 0 auto;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -16,7 +22,7 @@ h2{
     color:  #035f9c;
 }
 #content{
-    max-width: 45%;
+    max-width: 100%;
     margin: 0px auto;
     font-size: 15px;
     font-family: Ariel;
@@ -41,5 +47,5 @@ h2{
     text-align: center;
 }
 img{
-    max-width: 10%;
+    max-width: 40%;
 }
