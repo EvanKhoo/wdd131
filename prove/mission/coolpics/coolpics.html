@@ -7,60 +7,67 @@
     <title>Coolpics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="coolpics.css">
+    <script defer src="coolpics.js"></script>
 </head>
 <body>
     <div id="content">
         <header>
             <h1>Cool Pics 📷</h1>
-            <button id="menu-btn">
-                Menu
+            <button class="menu-btn">
+                <h2>Menu</h2>
             </button>
-            <nav>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <nav class="hide">
+                <a href="#">Home</a>
+                <a href="#">People</a>
+                <a href="#">Places</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </nav>
         </header>
         <main>
             <h2>Current Work</h2>
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div>
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
-            <div class="image">
-                <img src="coopics-imgs/coolpics-yellowstone.jpg">
-            </div> 
+            <section class="gallery">
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+                <figure>
+                    <img src="coopics-imgs/coolpics-yellowstone.jpg">
+                </figure>
+            </section>
+            <dialog>
+                <img>
+                <button class="close-viewer">X</button>
+            </dialog>
         </main>
         <footer>
             <p>copy& 2025 Not a real site</p>
