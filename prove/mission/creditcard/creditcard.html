@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Evan Khoo" />
+  <title>Credit Card Prove Assignment</title>
+  <link rel="stylesheet" href="creditcard.css" />
+  <script src="creditcard.js" defer></script>
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+<main>
+    <form id="checkoutForm" autocomplete="off" novalidate>
+        <div class="card-stack">
+            <div class="card card-back">
+                <div class="mag-strip"></div>
+                <div class="cvv-area">
+                    <label for="cvvInput">CVC/CVV</label>
+                    <input type="text" id="cvvInput" name="cvvInput" maxlength="3" placeholder="•••" inputmode="numeric" required>
+                </div>
+            </div>
+
+            <div class="card" id="front-creditCard">
+                <div class="card-brand">💳</div>
+                <div class="card-total">TOTAL <span class="amount">$199</span></div>
+
+                <div class="card-number">
+                    <label for="cardNum">CREDIT CARD NUMBER</label>
+                    <input type="text" id="cardNum" name="cardNum" inputmode="numeric" placeholder="#### #### #### ####" required>
+                </div>
+
+                <div class="card-meta">
+                    <div class="card-name">
+                        <label for="fullName">CARD HOLDER</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="card-exp">
+                        <label for="expMonth">EXP</label>
+                        <input type="text" id="expMonth" name="expMonth" maxlength="2" placeholder="MM" required>
+                        <span>/</span>
+                        <input type="text" id="expYear" name="expYear" maxlength="2" placeholder="YY" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="errors" aria-live="polite" style="color: #b91c1c; margin-top:10px;"></div>
+        <button type="submit">Pay</button>
+    </form>
+</main>
+</body>
+</html>
