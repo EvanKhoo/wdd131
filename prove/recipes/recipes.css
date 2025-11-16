@@ -1,0 +1,110 @@
+body {
+    width: 50%;
+    justify-self: center;
+}
+main{
+    width: 100%;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Amatic SC";
+}
+
+.title img {
+    width: 10%;
+    height: auto;
+    align-self: center;
+}
+
+.title h1 {
+    font-weight: 1000;
+    font-size: 4rem;
+    align-self: end;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 45px 10px 10px;
+    font-size: 16px;
+
+    border: 2px solid black;
+    border-radius: 6px;
+
+    background:
+        linear-gradient(to bottom, black 0%, black 100%) right 40px center / 1px 70% no-repeat,
+        url("images/search.svg") right 10px center / 20px no-repeat;
+
+    background-repeat: no-repeat;
+}
+
+/* Recipe Cards */
+.recipe-card {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    width: 100%;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.recipe-card button{
+    margin: 10px;
+}
+.recipe-card h2{
+    font-size: 3rem;
+    color: rgb(74, 166, 197);
+    font-family: "Amatic SC";
+    margin: 10px;
+}
+.recipe-card p{
+    display: none;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.social img {
+    width: 50px;
+    height: auto;
+}
+footer a{
+    display: flex;
+    justify-self: center;
+}
+@media (min-width: 700px) {
+    body{
+        width: 80%;
+    }
+    .recipe-card {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .recipe-card img {
+        width: 60%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    .recipe-card-text {
+        width: 40%;
+        display: flex;
+        flex-direction: column; /* stack text vertically */
+        gap: 10px;
+    }
+    .recipe-card p {
+        display: block;
+    }
+}
+
