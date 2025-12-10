@@ -1,0 +1,40 @@
+.mission-hero {
+    padding: 60px 20px;
+}
+
+.mission-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mission-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mission-intro {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.mission-content h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.mission-content p,
+.mission-content ul {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.mission-content ul {
+    padding-left: 20px;
+}
+
+.mission-content li {
+    margin-bottom: 8px;
+}

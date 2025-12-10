@@ -1,0 +1,88 @@
+/* ================================
+   WHO WE ARE PAGE STYLING
+   Matches Mission Page Aesthetic
+================================ */
+
+/* Hero Section */
+.who-hero {
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.who-container h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.who-intro {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Content Section */
+.who-content h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.who-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Values List */
+.who-content ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.who-content li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.who-content li strong {
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .who-container {
+        padding: 20px;
+    }
+
+    .who-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .who-intro {
+        font-size: 1.15rem;
+    }
+
+    .who-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .who-content p,
+    .who-content li {
+        font-size: 1rem;
+    }
+}

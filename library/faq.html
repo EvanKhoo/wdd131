@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Evan Khoo">
+    <title>FAQ - Khoo Family Library</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="faq.css" />
+
+    <script type="module" src="general_page.js"></script>
+    <script type="module" src="faq.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo-2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/library_flavicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/library_flavicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="main-header"></div>
+
+    <main class="faq-page">
+        <h1>Frequently Asked Questions</h1>
+
+        <section class="faq-item">
+            <button class="faq-question">What is the Khoo Family Library?</button>
+            <div class="faq-answer">
+                <p>The Khoo Family Library is a personal collection of books open to members. You can browse, borrow, and participate in community events.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <button class="faq-question">How can I become a member?</button>
+            <div class="faq-answer">
+                <p>Membership is open to anyone. Simply fill out the registration form on our website or visit us in person.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <button class="faq-question">Can I donate books?</button>
+            <div class="faq-answer">
+                <p>Yes! We gladly accept book donations. Contact us to arrange a drop-off or pick-up.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <button class="faq-question">Do you have digital resources?</button>
+            <div class="faq-answer">
+                <p>We are gradually expanding our digital collection. Check our “Explore Circles” page for current offerings.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="site-footer"></div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

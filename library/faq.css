@@ -1,0 +1,61 @@
+/* ==========================
+   FAQ Page Styles
+   Mobile First
+========================== */
+
+.faq-page {
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.faq-page h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.2s ease;
+    color: white;
+}
+
+.faq-question:hover {
+    color: #0066cc;
+}
+
+.faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    display: none;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================
+   Tablet & Up
+========================== */
+@media (min-width: 768px) {
+    .faq-page {
+        padding: 3rem 2rem;
+    }
+
+    .faq-question {
+        font-size: 1.25rem;
+    }
+}

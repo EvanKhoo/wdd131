@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Evan Khoo">
+    <title>Contact Us - Khoo Family Library</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="contact-us.css" />
+
+    <script type="module" src="general_page.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo-2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/library_flavicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/library_flavicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="main-header"></div>
+
+    <main class="contact-page">
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Reach out with any questions, suggestions, or comments.</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@khoofamilylibrary.com">info@khoofamilylibrary.com</a></li>
+                <li><strong>Phone:</strong> (123) 456-7890</li>
+                <li><strong>Address:</strong> 123 Library Lane, Your City, State</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="site-footer"></div>
+</body>
+</html>

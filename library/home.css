@@ -1,0 +1,303 @@
+/* ======================== */
+/*        RESET + ROOT      */
+/* ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-yellow: #f0c000;
+  --dark-bg: #1e1e2f;
+  --light-bg: #f9f9f9;
+  --text-light: #ffffff;
+  --text-muted: #ccc;
+  --max-width: 800px;
+  --border-radius: 8px;
+  --header-height: 50px;
+  padding-top: calc(var(--header-height));
+
+}
+
+/* ======================== */
+/*         BASE STYLES      */
+/* ======================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana;
+  background-color: #0b0f1a;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ======================== */
+/*        HEADER/NAV        */
+/* ======================== */
+.main-header{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 60px;
+  background-color: #56683C;
+  backdrop-filter: blur(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  transition: top 0.3s ease-in-out;
+}
+.main-header img{
+  width: 50px;     
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+.navbar {
+  height: 50px;
+  font-size: 1rem;
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-menu li {
+  position: relative;
+  padding: 8px;
+}
+
+.header-links a,
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.header-links a {
+  margin: 0 10px;
+}
+
+.nav-menu a:hover {
+  color: #97908E;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 10px 0;
+  border-radius: 8px;
+  min-width: 160px;
+  z-index: 999;
+  list-style: none;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Login Button */
+#login {
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+#login:hover {
+  color: #97908E;
+}
+
+/* ======================== */
+/*         FOOTER           */
+/* ======================== */
+.site-footer {
+  width: 100%;
+  height: 60px;
+  background-color: #56683C;
+  color: black;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid white;
+}
+
+.site-footer * {
+    margin-top: 5px;
+    color: black;
+}
+.site-footer p {
+  font-size: 17px;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* ======================== */
+/*      VIDEO BACKGROUND    */
+/* ======================== */
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#bgVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======================== */
+/*        HERO SECTION      */
+/* ======================== */
+.hero {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video,
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero video {
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #97908E;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 3;
+}
+
+/* ======================== */
+/*        PAGE STYLES       */
+/* ======================== */
+.waitlist {
+  width: 100%;
+}
+
+.logo {
+  margin-top: 6px;
+  width: 60px;
+  height: auto;
+}
+
+
+/* === Waitlist === */
+.waitlist-hero {
+  background-image: url('img/library_bgi.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waitlist-container {
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+}
+
+.waitlist-container h2 {
+  color: #56683C;
+}
+
+.waitlist-container p {
+  color: var(--text-muted);
+}
+
+.waitlist-form input {
+  background: #2c2c3e;
+  border: 1px solid #444;
+  color: white;
+}
+
+.waitlist-form button {
+  background-color: #56683C;
+  color: black;
+  font-weight: bold;
+}
+
+.waitlist-form button:hover {
+  background-color: #97908E;
+}

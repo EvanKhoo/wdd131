@@ -1,0 +1,217 @@
+/* ==========================
+   Explore Library
+   Mobile First
+========================== */
+body{
+    background-image: url("img/library_bgi.jpg");
+}
+.explore-library {
+    padding: 1rem;
+    padding-bottom: 4rem;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Desktop: limit width to 60% */
+@media (min-width: 900px) {
+    .explore-library {
+        width: 60%;
+        min-width: 60%;
+        max-width: 60%;
+    }
+}
+
+/* ==========================
+   Genre Tabs
+========================== */
+.genre-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.genre-button {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    background: #333;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.genre-button.active {
+    background: #ffcc00;
+    color: #1a1a1a;
+}
+
+/* ==========================
+   Search Bar
+========================== */
+.search-bar {
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+/* ==========================
+   Book Grid
+========================== */
+.book-grid {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+}
+
+/* ==========================
+   Book Cards
+========================== */
+/* ==========================
+   Book Cards - Uniform Height
+========================== */
+.book-card {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0.5rem;
+    background: #222;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.book-card img {
+    width: 100%;
+    height: 80%; /* fixed image height */
+    object-fit: cover; /* ensures consistent cropping */
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+}
+
+.book-card h3 {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;         /* ensure it respects card width */
+    box-sizing: border-box; /* include padding in width */
+    padding: 0 0.25rem;  /* optional, give a tiny horizontal buffer */
+}
+
+.book-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.25rem;
+}
+
+
+.book-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+/* ==========================
+   Modal
+========================== */
+.book-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.book-modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+    margin: 0.75rem 0;
+    font-size: 1.2rem;
+}
+
+.modal-content p {
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    color: #ccc;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    display: none;
+}
